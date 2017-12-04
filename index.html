@@ -151,6 +151,65 @@
           <div id="js-content" class="content-ll">
             
   
+    <article id="post-Raspberry-pi无显示屏-SSH远程登录-xrdp远程访问系统界面" class="article article-type-post  article-index" itemscope itemprop="blogPost">
+  <div class="article-inner">
+    
+    <div class="article-entry" itemprop="articleBody">
+      
+        <hr>
+<h2 id="title-Raspberry-pi-无显示屏，SSH远程登录及xrdp远程访问系统界面"><a href="#title-Raspberry-pi-无显示屏，SSH远程登录及xrdp远程访问系统界面" class="headerlink" title="title: Raspberry pi 无显示屏，SSH远程登录及xrdp远程访问系统界面"></a>title: Raspberry pi 无显示屏，SSH远程登录及xrdp远程访问系统界面</h2><p>1.1    SSH访问树莓派</p>
+<p>1.1.1    树莓派官网下载镜像：<a href="https://www.raspberrypi.org/downloads/" target="_blank" rel="noopener">https://www.raspberrypi.org/downloads/</a></p>
+<p>1.1.2    在windows系统下使用工具Win32DiskImager.exe ，将镜像烧录到 SD卡中，插入树莓派，上电启动。</p>
+<p>1.1.3    用网线将树莓派与家里面的无线路由器相连接，通过与无线路由器连接的电脑，查看无线路由器连接的所有终端，并找出树莓派连接的IP地址，记下（不懂怎么查请百度）。</p>
+<p>1.1.4    下载putty<br><a href="https://the.earth.li/~sgtatham/putty/0.70/w64/putty.exe电脑中打开。" target="_blank" rel="noopener">https://the.earth.li/~sgtatham/putty/0.70/w64/putty.exe电脑中打开。</a><br>输入记下的树莓派IP 地址，即可登录到树莓派的控制台，<br>登录账号：pi   密码：raspberry  即可访问树莓派。</p>
+<p>1.2    xrdp访问树莓派</p>
+<p>1.2.1    通过SSH 给树莓派安装服务xrdp<br>执行命令：sudo apt-get install xrdp</p>
+<p>1.2.2    在电脑上运行mstsc 弹出远程连接窗口，输入IP地址，点击连接。</p>
+<p>1.2.3进入树莓登录界面，登录账号：pi   密码：raspberry。</p>
+<p>1.2.3    登录后进入树莓派系统桌面，如图5。进入桌面后可以让树莓派连接无线网络，拔掉网线，即可无线上网。</p>
+<p>切记：连接无线往后，树莓派IP地址发生变化，通过电脑重新查看无线路由器终端，记下新的IP地址，即可再次进行SSH以及xrdp访问。</p>
+
+      
+
+      
+    </div>
+    <div class="article-info article-info-index">
+      
+      
+      
+
+      
+        <p class="article-more-link">
+          <a class="article-more-a" href="/2017/12/04/Raspberry-pi无显示屏-SSH远程登录-xrdp远程访问系统界面/">展开全文 >></a>
+        </p>
+      
+
+      
+      <div class="clearfix"></div>
+    </div>
+  </div>
+</article>
+
+<aside class="wrap-side-operation">
+    <div class="mod-side-operation">
+        
+        <div class="jump-container" id="js-jump-container" style="display:none;">
+            <a href="javascript:void(0)" class="mod-side-operation__jump-to-top">
+                <i class="icon-font icon-back"></i>
+            </a>
+            <div id="js-jump-plan-container" class="jump-plan-container" style="top: -11px;">
+                <i class="icon-font icon-plane jump-plane"></i>
+            </div>
+        </div>
+        
+        
+    </div>
+</aside>
+
+
+
+
+  
     <article id="post-hello-world" class="article article-type-post  article-index" itemscope itemprop="blogPost">
   <div class="article-inner">
     
@@ -164,7 +223,7 @@
 
         
         <a href="/2017/12/04/hello-world/" class="archive-article-date">
-  	<time datetime="2017-12-04T07:25:44.743Z" itemprop="datePublished"><i class="icon-calendar icon"></i>2017-12-04</time>
+  	<time datetime="2017-12-04T14:03:05.568Z" itemprop="datePublished"><i class="icon-calendar icon"></i>2017-12-04</time>
 </a>
         
       </header>
@@ -172,14 +231,6 @@
     <div class="article-entry" itemprop="articleBody">
       
         <p>很开心能够自己制作一个blog，与大家分享一些自己的工作经验。</p>
-<h2 id="Quick-Start"><a href="#Quick-Start" class="headerlink" title="Quick Start"></a>Quick Start</h2><h3 id="Create-a-new-post"><a href="#Create-a-new-post" class="headerlink" title="Create a new post"></a>Create a new post</h3><figure class="highlight bash"><table><tr><td class="gutter"><pre><span class="line">1</span><br></pre></td><td class="code"><pre><span class="line">$ hexo new <span class="string">"My New Post"</span></span><br></pre></td></tr></table></figure>
-<p>More info: <a href="https://hexo.io/docs/writing.html" target="_blank" rel="noopener">Writing</a></p>
-<h3 id="Run-server"><a href="#Run-server" class="headerlink" title="Run server"></a>Run server</h3><figure class="highlight bash"><table><tr><td class="gutter"><pre><span class="line">1</span><br></pre></td><td class="code"><pre><span class="line">$ hexo server</span><br></pre></td></tr></table></figure>
-<p>More info: <a href="https://hexo.io/docs/server.html" target="_blank" rel="noopener">Server</a></p>
-<h3 id="Generate-static-files"><a href="#Generate-static-files" class="headerlink" title="Generate static files"></a>Generate static files</h3><figure class="highlight bash"><table><tr><td class="gutter"><pre><span class="line">1</span><br></pre></td><td class="code"><pre><span class="line">$ hexo generate</span><br></pre></td></tr></table></figure>
-<p>More info: <a href="https://hexo.io/docs/generating.html" target="_blank" rel="noopener">Generating</a></p>
-<h3 id="Deploy-to-remote-sites"><a href="#Deploy-to-remote-sites" class="headerlink" title="Deploy to remote sites"></a>Deploy to remote sites</h3><figure class="highlight bash"><table><tr><td class="gutter"><pre><span class="line">1</span><br></pre></td><td class="code"><pre><span class="line">$ hexo deploy</span><br></pre></td></tr></table></figure>
-<p>More info: <a href="https://hexo.io/docs/deployment.html" target="_blank" rel="noopener">Deployment</a></p>
 
       
 
